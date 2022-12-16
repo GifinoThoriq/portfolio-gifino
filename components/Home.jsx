@@ -11,6 +11,8 @@ export default function Home(){
 
     const { width } = useWindowDimensions()
 
+    const animation = useAnimation()
+
     const router = useRouter()
 
     const list = ["About", "Projects", "Experiences"]
@@ -31,8 +33,6 @@ export default function Home(){
         damping: 10
     }
 
-    const animation = useAnimation()
-
     useEffect(()=>{
         animation.start({
             x: 72,
@@ -41,7 +41,7 @@ export default function Home(){
                 bounce: 0
             }
         })
-    },[])
+    },[animation])
 
     useEffect(()=>{
         if(aboutAnimation == true){
@@ -61,7 +61,7 @@ export default function Home(){
             });
         }
 
-    },[aboutAnimation])
+    },[aboutAnimation, animation])
 
     useEffect(()=>{
         if(projectAnimation == true){
@@ -81,7 +81,7 @@ export default function Home(){
             });
         }
 
-    },[projectAnimation])
+    },[projectAnimation, animation])
 
     useEffect(()=>{
         if(experienceAnimation == true){
@@ -102,7 +102,7 @@ export default function Home(){
         }
 
 
-    },[experienceAnimation])
+    },[experienceAnimation, animation])
 
     return(
         <div className={styles.home}>
@@ -167,6 +167,7 @@ export default function Home(){
                                 src={'/profile.png'}
                                 layout="fill"
                                 objectFit='contain'
+                                alt='Photo Profile'
                             />
                         </motion.div>
                     </div>
@@ -195,7 +196,7 @@ export default function Home(){
                     
                 </div>
                 <div className={styles.sectionBottom}>
-                    <span>I'm Gifino Thoriq</span>
+                    <span>I&apos;m Gifino Thoriq</span>
                 </div>
             </div>
         </div>

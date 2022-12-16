@@ -28,6 +28,7 @@ export default function ProjectSlide({
                                         layout="fill"
                                         objectFit='contain'
                                         priority={true}
+                                        alt={project.title}
                                     />
                                 </div>
                             </div>
@@ -49,6 +50,7 @@ export default function ProjectSlide({
                                         layout="fill"
                                         objectFit='contain'
                                         priority={true}
+                                        alt={project.title}
                                     />
                                 </div>
                             </div>
@@ -70,6 +72,7 @@ export default function ProjectSlide({
                                         layout="fill"
                                         objectFit='contain'
                                         priority={true}
+                                        alt={project.title}
                                     />
                                 </div>
                             </div>

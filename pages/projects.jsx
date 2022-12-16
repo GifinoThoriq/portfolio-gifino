@@ -4,14 +4,14 @@ import styles from '../styles/Project.module.css'
 import IoTProject from '../components/projects/IoTProject'
 import UiProject from '../components/projects/UiProject'
 import WebProject from '../components/projects/WebProject'
-import useWindowDimensions from '../helper/useWindowsDimensions'
+import UseWindowDimensions from '../helper/useWindowsDimensions'
 import NavProject from '../components/projects/navigation/NavProject'
 
 import { AnimatePresence } from 'framer-motion'
 
-export default function project(){
+export default function Project(){
 
-    const { width } = useWindowDimensions()
+    const { width } = UseWindowDimensions()
 
     const [navIndex, setNavIndex] = useState(1)
 

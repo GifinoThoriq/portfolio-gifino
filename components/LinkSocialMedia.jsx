@@ -7,6 +7,7 @@ export default function LinkSocialMedia({name, link, style}){
         <a 
             href={link}
             target={"_blank"}
+            rel="noreferrer"
         >
             {
                 socialmedia

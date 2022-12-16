@@ -47,6 +47,7 @@ export default function IconSocial({image}){
                     src={image}
                     width={20}
                     height={20}
+                    alt="social"
                 />
             </motion.div>
         </div>
