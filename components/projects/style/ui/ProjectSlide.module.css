@@ -1,0 +1,69 @@
+.projectThumbnailContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.projectThumbnail{
+    width: 640px;
+    height: 360px;
+    background-color: #F8F9FA;
+    position: relative;
+}
+
+.projectThumbnail > span {
+    position: unset !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.projectThumbnail > span > img {
+    position: unset !important;
+}
+
+.titleProject{
+    font-size: 40px;
+    font-weight: 600;
+    width: 640px;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.prevArrow{
+    margin-right: 36px;
+}
+
+.nextArrow{
+    margin-left: 36px;
+}
+
+/* tablet */
+
+@media screen and (max-width: 1024px){
+    .titleProject{
+        font-size: 24px;
+    }
+
+    .projectThumbnail{
+        width: 558px;
+        height: 279px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .projectThumbnail{
+        width: 486px;
+        height: 243px;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .projectThumbnail{
+        width: 286px;
+        height: 143px;
+    }
+
+    .titleProject{
+        font-size: 16px;
+    }
+}

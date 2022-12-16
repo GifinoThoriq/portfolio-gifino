@@ -1,0 +1,28 @@
+.container{
+    padding: 0 70px;
+    margin-top: 70px;
+    max-width: 1300px;
+}
+
+.container .title{
+    color: #343A40;
+    font-size: 64px;
+}
+
+.experienceListContainer{
+    padding: 0;
+    margin: 0;
+}
+
+/* mobile phone */
+@media screen and (max-width:426px){
+    .container{
+        padding: 0 24px;
+    }
+}
+
+@media screen and (max-width:376px){
+    .container .title{
+        font-size: 48px;
+    }
+}

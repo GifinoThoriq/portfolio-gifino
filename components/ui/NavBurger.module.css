@@ -1,0 +1,71 @@
+.wrapper{
+    width: 36%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+}
+
+.burgerContainer{
+    position: absolute;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+}
+
+.btnBurger{
+    border: none;
+    background: none;
+    margin-top: 24px;
+    position: absolute;
+    right: 16px;
+    z-index: 10;
+}
+
+.btnBurger > svg{
+    transform: scaleX(-1);
+}
+
+.square{
+    position: absolute;
+    height: 100%;
+    background-color: rgba(52, 58, 64, 1);
+    right: 0;
+    z-index: 8;
+}
+
+.nav{
+    background-color:rgba(52, 58, 64, 1) ;
+    width: 100%;
+    position: absolute;
+    right: -300px;
+    z-index: 9;
+    height: 100%;
+}
+
+.nav > ul{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    height: 60%;
+    margin-top: 86px;
+    margin-right: 24px;
+    justify-content: space-around;
+}
+
+.nav > ul > li{
+    font-size: 24px;
+    color: rgba(248, 249, 250, 0.5);
+}
+
+.active {
+    color: rgba(248, 249, 250, 1) !important;
+}
+
+@media screen and (max-width: 426px){
+    .nav > ul > li{
+        font-size: 16px;
+    }
+}

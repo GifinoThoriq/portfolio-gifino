@@ -1,0 +1,36 @@
+.wrapper{
+    background-color: #F8F9FA;
+    padding: 0 70px 0 70px;
+    color: #343A40
+}
+
+.titleSection{
+    margin-top: 22px;
+}
+
+.titleSection > span{
+    color: #343A40;
+    font-size: 64px;
+}
+
+.navContainer > ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navContainer > ul > li{
+    margin-right: 12px;
+    opacity: 0.5;
+}
+
+.navContainer > ul > li.active{
+    opacity: 1;
+}
+
+.navContainer > ul > li:hover{
+    opacity: 1;
+}
+
+.navContainer > ul > li .active{
+    opacity: 1;
+}

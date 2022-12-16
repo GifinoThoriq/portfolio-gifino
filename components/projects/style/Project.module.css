@@ -1,0 +1,30 @@
+.container{
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    padding: 0 70px 0 70px;
+}
+
+.titleSection{
+    margin-top: 22px;
+}
+
+.titleSection > span{
+    color: #343A40;
+    font-size: 64px;
+}
+
+.projectContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 426px){
+    .container{
+        padding: 0;
+    }
+
+}
