@@ -1,9 +1,9 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useRouter } from "next/router";
-
+import { useTransitionFix } from '../utils/UseTransitionFix';
 
 export default function Transition({children}){
-
+    const transitionCallback = useTransitionFix()
     const { asPath } = useRouter();
     const variants = {
         out: {
@@ -28,6 +28,8 @@ export default function Transition({children}){
             <AnimatePresence 
                 initial={false}
                 mode={'wait'}
+                exitBeforeEnter 
+                onExitComplete={transitionCallback}
             >
                 <motion.div
                     key={asPath}
