@@ -1,26 +1,37 @@
 import '../styles/globals.css'
 import Transition from '../components/Transition'
 import Router from "next/router";
+import { AnimatePresence, motion } from 'framer-motion'
+import { useTransitionFix } from '../utils/UseTransitionFix';
 
-function MyApp({ Component, pageProps }) {
+const PAGE_VARIANTS = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+  },
+  exit: {
+    opacity: 0,
+  },
+}
 
-  const routeChange = () => {
-    const tempFix = () => {
-      const allStyleElems = document.querySelectorAll('style[media="x"]');
-      allStyleElems.forEach((elem) => {
-        elem.removeAttribute("media");
-      });
-    };
-    tempFix();
-  };
+function MyApp({ Component, pageProps, router }) {
 
-  Router.events.on("routeChangeStart", routeChange );
-  Router.events.on("routeChangeComplete", routeChange );
+  const transitionCallback = useTransitionFix()
 
   return(
-    <Transition>
-      <Component {...pageProps} />
-    </Transition>
+    <AnimatePresence exitBeforeEnter onExitComplete={transitionCallback}>
+      <motion.div
+        key={router.route}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        variants={PAGE_VARIANTS}
+      >
+        <Component {...pageProps} />
+      </motion.div>
+    </AnimatePresence>
   )
 }
 
