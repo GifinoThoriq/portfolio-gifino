@@ -1,5 +1,4 @@
 import '../styles/globals.css'
-import '../styles'
 import Transition from '../components/Transition'
 import Router from "next/router";
 
