@@ -168,6 +168,7 @@ export default function Home(){
                                 layout="fill"
                                 objectFit='contain'
                                 alt='Photo Profile'
+                                priority
                             />
                         </motion.div>
                     </div>
