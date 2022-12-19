@@ -1,13 +1,27 @@
+import { useEffect } from "react"
 import Image from "next/image"
 import styles from "./MoreArrow.module.css"
-import { motion } from "framer-motion"
+import { motion, useAnimation } from "framer-motion"
 
 export default function MoreArrow(){
+
+    const animation = useAnimation()
+
+    useEffect(()=>{
+        animation.start({
+            y: [0,10,0],
+            transition: {
+                duration: 2,
+                repeat: Infinity
+            }
+        })
+    },[animation])
+
     return(
         <div className={styles.wrapper}>
             <motion.div
-                animate={{ y: [10,20,10] }}
-                transition={{ ease: "easeIn", duration: 2, repeat: Infinity }}
+                initial={false}
+                animate={animation}
             >
                 <Image
                     src={"/icon/Arrow.svg"}

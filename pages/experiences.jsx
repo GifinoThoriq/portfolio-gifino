@@ -1,11 +1,16 @@
 import styles from '../styles/Experience.module.css'
 import expData from '../constant/ExperienceData'
 import ExperienceList from '../components/experiences/ExperienceList'
+import BackArrow from '../components/ui/BackArrow'
 
 export default function experience(){
     return(
         <div className={styles.container}>
-            <span className={styles.title}>Experiences</span>
+            <div>
+                <BackArrow/>
+                <span className={styles.title}>Experiences</span>
+            </div>
+            
             <div>
                 <ul className={styles.experienceListContainer}>
                     {expData.map(exp => {

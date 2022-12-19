@@ -6,6 +6,7 @@ import UiProject from '../components/projects/UiProject'
 import WebProject from '../components/projects/WebProject'
 import UseWindowDimensions from '../helper/useWindowsDimensions'
 import NavProject from '../components/projects/navigation/NavProject'
+import BackArrow from '../components/ui/BackArrow'
 
 import { AnimatePresence } from 'framer-motion'
 
@@ -29,6 +30,7 @@ export default function Project(){
                     />
                 }
                 <div className={styles.titleSection}>
+                    <BackArrow/>
                     <span>Projects</span>
                 </div>
                 <div className={styles.projectWrapper}>

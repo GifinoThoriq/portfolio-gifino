@@ -2,6 +2,7 @@ import styles from '../styles/About.module.css'
 import { motion } from 'framer-motion'
 import LinkSocialMedia from '../components/LinkSocialMedia'
 import {linksocialmedia} from '../constant/SocialMedia'
+import BackArrow from '../components/ui/BackArrow'
 
 export default function about(){
 
@@ -9,6 +10,7 @@ export default function about(){
         <div className={styles.wrapper}>
             <div className={styles.container}>
                 <div className={styles.sectionRight}>
+                    <BackArrow/>
                     <span className={styles.title}>About</span>
                 </div>
                 <div className={styles.sectionLeft}>
