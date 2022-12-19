@@ -1,6 +1,6 @@
 .wrapper{
     position: absolute;
-    top: 82px;
+    top: 100px;
     right: 12px;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
 
 .wrapper > span {
     writing-mode: vertical-rl;
-    margin-top: 8px;
+    margin-top: 20px;
     font-size: 16px;
     font-weight: 500;
     color: #343A40;

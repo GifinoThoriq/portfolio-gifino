@@ -6,8 +6,8 @@ export default function MoreArrow(){
     return(
         <div className={styles.wrapper}>
             <motion.div
-                animate={{ y: [0,10,20,10,0] }}
-                transition={{ ease: "easeInOut", duration: 2, repeat: Infinity }}
+                animate={{ y: [10,20,10] }}
+                transition={{ ease: "easeIn", duration: 2, repeat: Infinity }}
             >
                 <Image
                     src={"/icon/Arrow.svg"}
