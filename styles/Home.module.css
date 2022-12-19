@@ -10,6 +10,7 @@
 .sectionTop{
   display: flex;
   justify-content: center;
+  
 }
 
 .sectionTop > span, 
@@ -86,6 +87,10 @@
 }
 
 @media screen and (max-width: 426px) {
+  .sectionTop{
+    margin-bottom: -20px;
+  }
+
   .sectionTop > span, 
   .sectionBottom > span{
     font-size: 48px;

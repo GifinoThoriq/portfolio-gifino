@@ -6,6 +6,7 @@ import Image from 'next/image';
 import useWindowDimensions from '../helper/useWindowsDimensions'
 import NavBurger from './ui/NavBurger';
 import { useRouter } from 'next/router';
+import MoreArrow from './ui/MoreArrow';
 
 export default function Home(){
 
@@ -109,10 +110,13 @@ export default function Home(){
             {
                 width <= 768 
                 &&
-                <NavBurger
-                    onIndexChange={indexChangeHandler}
-                    list = {list}
-                />
+                <>
+                    <NavBurger
+                        onIndexChange={indexChangeHandler}
+                        list = {list}
+                    />
+                    <MoreArrow/>
+                </>
             }
             <div className={styles.content}>
                 <div className={styles.sectionTop}>

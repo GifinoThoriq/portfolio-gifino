@@ -93,6 +93,10 @@
        height: 100%;
     }
 
+    .sectionLeft{
+        margin-top: 24px;
+    }
+
     .sectionLeft p{
         font-size: 16px;
     }

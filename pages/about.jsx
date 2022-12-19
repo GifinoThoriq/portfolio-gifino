@@ -1,5 +1,5 @@
 import styles from '../styles/About.module.css'
-import { motion, AnimatePresence, useAnimation } from 'framer-motion'
+import { motion } from 'framer-motion'
 import LinkSocialMedia from '../components/LinkSocialMedia'
 import {linksocialmedia} from '../constant/SocialMedia'
 

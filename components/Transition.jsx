@@ -28,7 +28,6 @@ export default function Transition({children}){
             <AnimatePresence 
                 initial={false}
                 mode={'wait'}
-                exitBeforeEnter 
                 onExitComplete={transitionCallback}
             >
                 <motion.div
