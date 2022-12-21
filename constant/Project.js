@@ -61,7 +61,7 @@ const Web = [
     {
         id: 'w1',
         title: 'Wedding Invitation',
-        thumbnail: '/thumbnail/jlan-thumbnail.jpg',
+        thumbnail: '/thumbnail/wedding-thumbnail.jpg',
         description: 'Build website wedding invitation for client using Next.JS as web framework and mongo as database. In the process of development, I mostly work on Front-end side in adding features and fixing bugs',
         socialmedia: [
             {
@@ -73,20 +73,12 @@ const Web = [
     {
         id: 'w2',
         title: 'C-warehouse',
-        thumbnail: '/thumbnail/jlan-thumbnail.jpg',
-        description: 'build monolithic website using react js as the library and firebase as the database. This website is about book store online. I work on this project with my friend, My contribution is build cart features, ',
+        thumbnail: '/thumbnail/cwarehouse-thumbnail.png',
+        description: 'build monolithic website using react js as the library and firebase as the database. This website is about book store online. I work on this project with my friend, and my contribution are build cart features and CRUD in admin pages using firebase',
         socialmedia: [
             {
-                name: 'figma',
-                link: 'https://www.figma.com/file/cNyCKSbRnQ1ZLtX1FYPnOv/Froduktip-Landing-Page?node-id=0%3A1'
-            },
-            {
-                name: 'behance',
-                link: 'https://www.behance.net/gallery/154153907/JLAN-e-commerce-design'
-            },
-            {
-                name: 'dribbble',
-                link: 'https://dribbble.com/shots/19494866-J-LAN-e-commerce-landing-page'
+                name: 'github',
+                link: 'https://github.com/arachaman/cpp'
             }
         ]
     }
@@ -95,42 +87,37 @@ const Web = [
 const IoT = [
     {
         id: 'io1',
-        title: 'Auto Dossing Hydroponic',
-        thumbnail: '/thumbnail/jlan-thumbnail.jpg',
-        description: 'bikin auto dossing hidroponik tapi sekarang hidroponic nya mangkrak :( ',
+        title: 'Runya Smarthome',
+        thumbnail: '/thumbnail/runya-thumbnail.jpg',
+        description: 'Build smarthome system using IoT and mobile application to monitor and control Iot devices. This works it is used on my final project in my college with my others two friends. In this project, I contribute on build the design and mobile application using react native.',
         socialmedia: [
             {
+                name: 'github',
+                link: 'https://github.com/Runya-Smarthome/mobile'
+            },
+            {
                 name: 'figma',
-                link: 'https://www.figma.com/file/cNyCKSbRnQ1ZLtX1FYPnOv/Froduktip-Landing-Page?node-id=0%3A1'
-            },
-            {
-                name: 'behance',
-                link: 'https://www.behance.net/gallery/154153907/JLAN-e-commerce-design'
-            },
-            {
-                name: 'dribbble',
-                link: 'https://dribbble.com/shots/19494866-J-LAN-e-commerce-landing-page'
+                link: 'https://www.figma.com/file/Hg983c3hbwuvFTpryIluzK/Mobile-App-Design?node-id=28%3A248&t=EPkD1UCRRDqVcDDI-1'
             }
         ]
     },
     {
-        id: 'io1',
-        title: 'Runya Smarthome',
-        thumbnail: '/thumbnail/jlan-thumbnail.jpg',
-        description: 'bikin runya smarthome ini keren banget ajg ',
+        id: 'io2',
+        title: 'Auto Dossing Hydroponic',
+        thumbnail: '/thumbnail/comingsoon-thumbnail.jpg',
+        description: <p>
+            Build auto dossing for hydroponic using IoT. In short, my nodes retrieve the concentration of water 
+            nutrient and then if nutrient was low the pump will stream the nutrient into the water container. 
+            <br/><br/>  
+            For the full system you can see my videos on youtube 
+            <br/>  
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/k7-rES7Vb98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>,
         socialmedia: [
             {
-                name: 'figma',
-                link: 'https://www.figma.com/file/cNyCKSbRnQ1ZLtX1FYPnOv/Froduktip-Landing-Page?node-id=0%3A1'
+                name: 'github',
+                link: 'https://github.com/GifinoThoriq/iot-webapp'
             },
-            {
-                name: 'behance',
-                link: 'https://www.behance.net/gallery/154153907/JLAN-e-commerce-design'
-            },
-            {
-                name: 'dribbble',
-                link: 'https://dribbble.com/shots/19494866-J-LAN-e-commerce-landing-page'
-            }
         ]
     },
 ]

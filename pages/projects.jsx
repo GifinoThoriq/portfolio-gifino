@@ -7,6 +7,7 @@ import WebProject from '../components/projects/WebProject'
 import UseWindowDimensions from '../helper/useWindowsDimensions'
 import NavProject from '../components/projects/navigation/NavProject'
 import BackArrow from '../components/ui/BackArrow'
+import SwipeArrow from '../components/ui/SwipeArrow'
 
 import { AnimatePresence } from 'framer-motion'
 
@@ -42,6 +43,9 @@ export default function Project(){
                         {navIndex === 3 && <IoTProject key={"iot"}/>}
                     </AnimatePresence>
                 </div>
+                { width <= 768 &&
+                    <SwipeArrow/>
+                }
             </div>
         </div>
     )

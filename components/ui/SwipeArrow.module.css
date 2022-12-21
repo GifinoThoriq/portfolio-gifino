@@ -1,0 +1,18 @@
+.wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper > span {
+    margin-top: 12px;
+    margin-right: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #343A40;
+}
+
+.image{
+    transform: rotate(270deg);
+}
