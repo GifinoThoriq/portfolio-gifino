@@ -48,7 +48,7 @@ export default function about(){
                                     }
                                 }}
                             >
-                                <a href="/download/Gifino Thoriq-CV.pdf" download="Gifino_Thoriq_CV">Download CV</a>
+                                <a href="/download/cv.pdf" download="Gifino_Thoriq_CV">Download CV</a>
                             </motion.button>
                         </div>
                     </div>
