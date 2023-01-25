@@ -1,0 +1,37 @@
+.projectThumbnail{
+    width: 640px;
+    height: 360px;
+    background-color: #F8F9FA;
+    position: relative;
+}
+
+.projectThumbnail > span {
+    position: unset !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.projectThumbnail > span > img {
+    position: unset !important;
+}
+
+@media screen and (max-width: 1024px){
+    .projectThumbnail{
+        width: 558px;
+        height: 279px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .projectThumbnail{
+        width: 486px;
+        height: 243px;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .projectThumbnail{
+        width: 286px;
+        height: 143px;
+    }
+}

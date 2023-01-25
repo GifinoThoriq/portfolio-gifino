@@ -4,23 +4,6 @@
     align-items: center;
 }
 
-.projectThumbnail{
-    width: 640px;
-    height: 360px;
-    background-color: #F8F9FA;
-    position: relative;
-}
-
-.projectThumbnail > span {
-    position: unset !important;
-    width: 100% !important;
-    height: 100% !important;
-}
-
-.projectThumbnail > span > img {
-    position: unset !important;
-}
-
 .titleProject{
     font-size: 40px;
     font-weight: 600;

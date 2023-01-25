@@ -5,7 +5,9 @@ import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import styles from '../style/ui/ProjectSlide.module.css'
+import styles from '../style/ui/ProjectSlide.module.css';
+import { motion } from 'framer-motion';
+import ProjectThumbnail from './ProjectThumbnail';
 
 export default function ProjectSlide({
     onthumbnailClick,
@@ -22,15 +24,7 @@ export default function ProjectSlide({
                                 className={styles.projectThumbnailContainer} 
                                 onClick={() => onthumbnailClick(projects.title, projects.description, projects.socialmedia)}
                             >
-                                <div className={styles.projectThumbnail}>
-                                    <Image
-                                        src={projects.thumbnail}
-                                        layout="fill"
-                                        objectFit='contain'
-                                        priority={true}
-                                        alt={project.title}
-                                    />
-                                </div>
+                                <ProjectThumbnail src={projects.thumbnail} alt={project.title} />
                             </div>
                             <span className={styles.titleProject}>{projects.title}</span>
                         </SwiperSlide> 
@@ -44,15 +38,7 @@ export default function ProjectSlide({
                                 className={styles.projectThumbnailContainer} 
                                 onClick={() => onthumbnailClick(projects.title, projects.description, projects.socialmedia)}
                             >
-                                <div className={styles.projectThumbnail}>
-                                    <Image
-                                        src={projects.thumbnail}
-                                        layout="fill"
-                                        objectFit='contain'
-                                        priority={true}
-                                        alt={project.title}
-                                    />
-                                </div>
+                                <ProjectThumbnail src={projects.thumbnail} alt={project.title} />
                             </div>
                             <span className={styles.titleProject}>{projects.title}</span>
                         </SwiperSlide> 
@@ -66,15 +52,7 @@ export default function ProjectSlide({
                                 className={styles.projectThumbnailContainer} 
                                 onClick={() => onthumbnailClick(projects.title, projects.description, projects.socialmedia)}
                             >
-                                <div className={styles.projectThumbnail}>
-                                    <Image
-                                        src={projects.thumbnail}
-                                        layout="fill"
-                                        objectFit='contain'
-                                        priority={true}
-                                        alt={project.title}
-                                    />
-                                </div>
+                                <ProjectThumbnail src={projects.thumbnail} alt={project.title} />
                             </div>
                             <span className={styles.titleProject}>{projects.title}</span>
                         </SwiperSlide> 

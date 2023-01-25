@@ -7,7 +7,7 @@ const UI = [
         socialmedia: [
             {
                 name: 'figma',
-                link: 'https://www.figma.com/file/cNyCKSbRnQ1ZLtX1FYPnOv/Froduktip-Landing-Page?node-id=0%3A1'
+                link: 'https://www.figma.com/file/RvjEzgUBbqzJG08jF4Lmhw/J-LAN-Concept-Design?node-id=98%3A76&t=AXkIazARumntuSuu-1'
             },
             {
                 name: 'behance',
