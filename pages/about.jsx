@@ -16,7 +16,7 @@ export default function about(){
                 <div className={styles.sectionLeft}>
                     <p>
                         Hello! My name is <strong>Gifino Thoriq</strong>, I am a student from Asia e University pursuing degree in
-                        Information and Communication Technology. I am a detail-oriented, reliabale, responsible, and hard-working
+                        Information and Communication Technology. I am a detail-oriented, reliable, responsible, and hard-working
                         person who has a keen interest in the UI UX, as well as Front-end development and the way they are implemented
                         in today industry
                     </p>
